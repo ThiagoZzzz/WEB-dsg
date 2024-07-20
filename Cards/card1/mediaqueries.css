@@ -1,0 +1,26 @@
+@media (768px <= width <= 1150px){
+    section.container_cards{
+        margin: 15vh 3rem;
+    }
+    p{
+        text-align: center;
+    }
+    div.card{
+        align-items: center;
+        justify-content: center;
+    }
+}
+@media (width < 768px){
+    section.container_cards{
+        margin: 15vh 3rem;
+        flex-direction: column;
+    }
+    p, h1, h2{
+        max-width: 300px;
+        text-align: center;
+    }
+    div.card{
+        align-items: center;
+        justify-content: center;
+    }
+}

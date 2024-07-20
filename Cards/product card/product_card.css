@@ -1,0 +1,55 @@
+@import url(root.css);
+body{
+    background-color: var(--cream);
+}
+.container_card{
+    display: flex;
+    justify-content: center;
+    max-width: fit-content;
+    margin: 15vh auto;
+}
+.container_card > img{
+    height: 50vh;
+    border-top-left-radius: 8px;
+    border-bottom-left-radius: 8px;
+}
+.info{
+    padding: 2rem;
+    background-color: white;
+    border-top-right-radius: 8px;
+    border-bottom-right-radius: 8px;
+}
+.info > p, h1{
+    max-width: 200px;
+}
+.info > h1{
+    color: var(--dark_blue);
+}
+.price > h1{
+    color: var(--dark_cyan);
+}
+.price{
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+}
+.price > p{
+    text-decoration:line-through
+}
+.btn{
+    display: flex;
+    justify-content: center;
+    gap: 1rem;
+    padding: 1rem;
+    border-radius: 10px;
+    color: white;
+    background-color: var(--dark_cyan);
+    font-family: 'Montserrat';
+    font-weight: 700;
+    transition: all .5s;
+}
+.btn:hover{
+    background-color: hsl(158, 33%, 24%);
+    transition: all .5s;
+    cursor: pointer;
+}

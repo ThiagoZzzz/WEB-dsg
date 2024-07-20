@@ -1,0 +1,82 @@
+@import url(root.css);
+body{
+    background-color: var(--bg);
+}
+section.container_card{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 15vh auto;
+}
+div.card{
+    background-color: var(--card);
+    padding: 2rem;
+    border-radius: 1rem;
+    max-width: 350px;
+    box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px; ;
+}
+img.nft{
+    display: flex;
+    width: 100%;
+    border-radius: 1rem;
+    margin: 0 auto;
+    margin-bottom: 1rem;
+
+    transition: all 0.3s;
+}
+.nft:hover{
+    filter: brightness(0.5);
+    cursor: pointer;
+}
+div.card > a{
+    color: white;
+    font-size: 1.7rem;
+    font-weight: 400;
+}
+p > a{
+    color: white;
+}
+div.card a:hover{
+    color: var(--cyan);
+    cursor: pointer;
+    transition: 0.5s all;
+}
+p{
+    color: var(--soft_blue);
+    font-size: 18px;
+}
+div.row_price{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    margin-bottom: 1rem;
+    border-bottom: 1px solid var(--line);
+}
+div.eth{
+    display: flex;
+    align-items: center;
+    gap: .5rem;
+}
+div.eth > p{
+    color: var(--cyan);
+    font-weight: 600;
+}
+div.clock{
+    display: flex;
+    align-items: center;
+    gap: .5rem;
+}
+div.row_price  img{
+    height: 20px;
+}
+div.row_details{
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+}
+img.avatar{
+    height: 30px;
+    border: 1px solid white;
+    border-radius: 50%;
+}
