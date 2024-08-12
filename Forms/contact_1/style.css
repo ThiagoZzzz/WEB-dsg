@@ -1,0 +1,90 @@
+:root{
+    --d_gray: #383838;
+    --l_gray: #989692;
+    --bone: #D3D0D0;
+    --bg: #E72E62;
+}
+@media (width < 600px){
+    .container_contact{
+        flex-direction: column;
+        justify-content: center;
+    }
+    form, .tittle, .info{
+        margin: 0 auto;
+    }
+}
+body{
+    background-color: var(--bg);
+}
+.container_contact{
+    display: flex;
+    align-items: start;
+    justify-content: space-around;
+    gap: 2rem;
+    padding: 3rem;
+
+    max-width: 700px;
+    min-height: 40vh;
+    margin: 15vh auto;
+
+    border-radius: 1rem;
+    background-color: var(--d_gray);
+    border-top: 50px solid #4e4c48;
+    box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+}
+.info{
+    margin-top: 12rem;
+    font-family: 'Poppins';
+    font-weight: 600;
+    color: #d3d0d070;
+}
+form{
+    display: flex;
+    flex-direction: column;
+}
+h1{
+    font-family: "Poppins";
+    font-size: 28px;
+    text-transform: uppercase;
+    color: #D13259;
+    border-bottom: 4px solid white;
+}
+.field{
+    all: unset;
+    overflow:visible;
+    font-family: "Poppins";
+    text-align: start;
+    color: white;
+    font-weight: 600;
+    min-width: 300px;
+    padding: .6rem;
+    margin: 1rem;
+    border-bottom: 2px solid var(--l_gray);
+    transition: all ease-in-out .4s;
+}
+.field:hover{
+    transition: all ease-in-out .4s;
+    background-color: #222222;
+}
+.btn{
+    all: unset;
+    display: flex;
+    align-self: center;
+    justify-content: center;
+    margin-top: 5.5rem;
+    padding: .5rem;
+    font-family: "Poppins";
+    font-weight: 800;
+    font-size: 18px;
+    letter-spacing: 3px;
+    color: #f52b5d;
+    text-transform: uppercase;
+    border-radius: .3rem;
+    transition: all ease-in-out .4s;
+}
+.btn:hover{
+    transition: all ease-in-out .4s;
+    cursor: pointer;
+    background-color: #222222;
+    transform: scale(1.2);
+}

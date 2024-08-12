@@ -1,45 +1,55 @@
 body{
-    background-color: rgb(53, 34, 34);
+    background-color: #d9e1f1;
+}
+.container_products{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 2rem;
+    margin: 15vh;
 }
 h3{
     font-family: 'Poppins';
+    font-size: 28px;
     text-transform: uppercase;
     font-weight: 600;
     margin: 0;
+    color: #1d1711;
 }
 h4{
     font-family: 'Poppins';
-    font-size: 28px;
-    font-weight: 700;
-    color: #344058;
+    font-style: italic;
+    font-size: 32px;
+    font-weight: 500;
+    color: #1d1711;
+    margin: 10px;
 }
 h4::first-letter{
-    font-size: 20px;
+    font-size: 24px;
+    letter-spacing: 4px;
 }
 p{
     margin-top: 1rem;
     margin-bottom: 0;
     font-family: 'Poppins';
     font-size: 14px;
-    color: #344058;
+    color: #424141;
 }
 img{
     max-width: 20vw;
-    min-width: 280px;
     border-radius: 1rem;
     transition: .3s ease;
 }
 img:hover {
     transform: translateY(-25%);
-    box-shadow: rgba(226, 196, 63, 0.25) 0px 13px 47px -5px, rgba(180, 71, 71, 0.3) 0px 8px 16px -8px;
+    box-shadow: rgba(75, 66, 25, 0.25) 0px 13px 47px -5px, rgba(31, 8, 8, 0.3) 0px 8px 16px -8px;
+    cursor: pointer;
 }
 .container_card{
-    margin: 15vh auto;
     display: flex;
     flex-direction: column;
-
-    max-width: 250px;
-    background-color: #d9e1f1;
+    background-color: #BAB9B8;
+    max-width: 20vw;
     border-radius: 1rem;
     padding: 1.5rem;
 }
@@ -50,6 +60,7 @@ img:hover {
 }
 .container_items{
     display: flex;
+    align-items: center;
     justify-content: space-around;
 }
 .container_colors{
@@ -69,11 +80,13 @@ img:hover {
 .color{
     padding: .7em;
     border-radius: 50%;
+    box-shadow:rgba(0, 0, 0, 0.15) 1.95px 1.95px 2.6px;
     transition: .2s ease-in-out;
 }
 .color:hover{
     cursor: pointer;
     transform: scale(1.2);
+    box-shadow:rgba(0, 0, 0, 0.15) 1.95px 1.95px 2.6px;
 }
 .card_btn{
     font-family: 'Poppins';
@@ -84,11 +97,12 @@ img:hover {
     border-radius: 1rem;
     min-width: 50%;
     margin: 0 auto;
-    background-color: #4d5d7e;
+    background-color:rgb(56, 56, 56);
     color: white;
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 30px 60px -12px inset, rgba(0, 0, 0, 0.3) 0px 18px 36px -18px inset;
     transition: .3s ease-in;
 }
 .card_btn:hover {
-    background-color: rgb(56, 56, 56);
+    background-color: #5c5447;
     cursor: pointer;
-  }
+}

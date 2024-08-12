@@ -1,0 +1,16 @@
+body{
+    margin: 0;
+}
+.side > img{
+    width: 33vw;
+}
+.container_all{
+    display: flex;
+    /* background-color: red; */
+}
+form{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: start;
+}
